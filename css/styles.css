@@ -1,0 +1,432 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: open sans;
+}
+
+.container {
+  padding: 60px 0;
+  width: 90%;
+  max-width: 1000px;
+  margin: auto;
+  overflow: hidden;
+}
+
+.title {
+  color: #19488a;
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+/* Header */
+
+header {
+  width: 100%;
+  height: 600px;
+  background: #2980b9; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #ffffffb9,
+    #6dd4fabd,
+    #297fb9af
+  ), url(../images/cover.jpg); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #ffffffb9,
+    #6dd4fabd,
+    #297fb9af
+  ), url(../images/cover.jpg); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+}
+
+nav{
+    text-align: right;
+    padding: 30px 50px 0 0;
+}
+
+nav > a{
+    color: wheat;
+    font-weight: 300;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+nav > a:hover{
+    text-decoration: underline;
+}
+
+header .textHeader{
+    display: flex;
+    height: 430px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.textHeader h1{
+    font-size: 50px;
+    color: white;
+}
+
+.textHeader h2{
+    font-size: 30px;
+    font-weight: 300;
+    color: white;
+}
+
+.wave{
+    position: absolute;
+    bottom: 0%;
+    width: 100%;
+}
+
+/* dunno */
+
+main .aboutUs{
+    padding: 30px 0 60px 0;
+}
+
+.containerAboutUs{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.imgAboutUs{
+    width: 48%;
+}
+
+.aboutUs .containerText{
+    width: 48%;
+}
+
+.containerText h3{
+    margin-bottom: 15px;
+}
+
+.containerText h3 span{
+    background: #3FAACE;
+    color: white;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
+    padding: 2px;
+    padding-right: 3px;
+    margin-right: 5px;
+}
+
+.containerText p{
+    padding: 0px 0px 30px 15px;
+    font-weight: 300;
+    text-align: justify;
+}
+
+/* Gallery */
+
+.portfolio{
+    background: #f2f2f2;
+}
+
+.gallery{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.imgEdu{
+    width: 24%;
+    height: 150%;
+    margin-bottom: 10px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
+}
+
+.imgEdu > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+} 
+
+.hoverGallery{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    transform: scale(0);
+    background: #4e8b31a9;
+    transition: transform .5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hoverGallery{
+    width: 50px;
+}
+
+.hoverGallery{
+    color: white;
+}
+
+.imgEdu:hover .hoverGallery{
+    transform: scale(1);
+}
+
+/* Client */
+
+.cards{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.cards .card{
+    background: #3faacecb;
+    display: flex;
+    width: 46%;
+    height: 200px;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 5px;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .6);
+}
+
+.cards .card img{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border: 3px solid white;
+    border-radius: 50%;
+    display: block;
+}
+
+.cards .card > .containerTextCard{
+    width: 60%;
+    color: white;
+}
+
+.cards .card > .containerTextCard p{
+    font-weight: 300;
+    padding: 5px;
+}
+
+/* Our team */
+
+.preparationsBeforeVaccine{
+    background: white;
+    padding-bottom: 30px;
+}
+
+.preparationsContainer{
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+}
+
+.preparationsIndividual{
+    width: 28%;
+    text-align: center;
+}
+
+.preparationsIndividual img{
+    width: 90%;
+}
+
+.preparationsIndividual h3{
+    margin: 10px 0;
+}
+
+.preparationsIndividual p{
+    font-weight: 300;
+    text-align: justify;
+}
+
+/* Footer */
+
+footer{
+    background: #1E1E24;
+    padding: 60px 0 30px 0;
+    margin: auto;
+    overflow: hidden;
+}
+
+.containerFooter{
+    display: flex;
+    width: 90%;
+    justify-content: space-evenly;
+    margin: auto;
+    padding-bottom: 50px;
+    border-bottom: 1px solid gray;
+}
+
+.contentFooter{
+    text-align: center;
+}
+
+.contentFooter h4{
+    color: white;
+    border-bottom: 3px solid #4D8B31;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.contentFooter p{
+    color: white;
+}
+
+.copyrigthTitle{
+    text-align: center;
+    font-size: 12px;
+    margin: 20px 0 0;
+    color: white;
+}
+
+@media screen and (max-width:900px){
+    header{
+        background-position: center;
+    }
+
+    .containerAboutUs{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .aboutUs .containerText{
+        width: 90%;
+    }
+
+    .imgAboutUs{
+        width: 90%;
+    }
+
+    /* Gallery */
+
+    .imgEdu{
+        width: 44%;
+    }
+
+    /* Client */
+
+    .cards{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .cards .card{
+        width: 90%;
+    }
+
+    .cards .card:first-child{
+        margin-bottom: 30px;
+    }
+
+    /* Before Vaccine */
+
+    .preparationsContainer{
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .preparationsIndividual{
+        width: 100%;
+        text-align: center;
+    }
+
+    .preparationsIndividual:nth-child(1), .preparationsIndividual:nth-child(2){
+        margin-bottom: 60px;
+    }
+
+    .preparationsIndividual img{
+        width: 90%;
+    }
+}
+
+@media screen and (max-width:500px){
+    nav{
+        text-align: center;
+        padding: 30px 0 0 0;
+    }
+
+    nav > a{
+        margin-right: 5px;
+    }
+
+    .textHeader h1{
+        font-size: 30px;
+    }
+
+    .textHeader h2{
+         font-size: 20px;
+    }
+
+    /* About Us */
+
+    .imgAboutUs{
+        margin-bottom: 60px;
+        width: 99%;
+    }
+
+    .aboutUs .containerText{
+        width: 95%;
+  }
+
+    /* Gallery */
+
+    .imgEdu{
+        width: 99%;
+    }
+
+    /* Clients */
+
+    .cards .card{
+        height: 450px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cards .card img{
+        width: 90px;
+        height: 90px;
+    }
+
+    /* Footer */
+
+    .containerFooter{
+        flex-direction: column;
+        border: none;
+    }
+
+    .contentFooter{
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .contentFooter h4{
+        border: none;
+    }
+
+    .contentFooter p{
+        border-bottom: 1px solid #f2f2f2;
+    }
+
+    .copyrigthTitle{
+        font-size: 10px;
+    }
+}
